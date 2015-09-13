@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<meta name="google-signin-client_id" content="134007555373-pcg9c09danth6u7m9d916ihrr8b63df7.apps.googleusercontent.com">
+
+
+	</head>
+	<body>
+		<h2>This is supergruper.</h2>
+		<div class="g-signin2" data-onsuccess="onSignIn"></div>
+		<a href="#" onclick="signOut();">Sign out</a>
+		<script>
+		function onSignIn(googleUser) {
+		  var profile = googleUser.getBasicProfile();
+		  var id_token = googleUser.getAuthResponse().id_token;
+		  console.log('ID: ' + id_token); // Do not send to your backend! Use an ID token instead.
+		  console.log('Name: ' + profile.getName());
+		  console.log('Image URL: ' + profile.getImageUrl());
+		  console.log('Email: ' + profile.getEmail());
+		};
+		function signOut() {
+		    var auth2 = gapi.auth2.getAuthInstance();
+		    auth2.signOut().then(function () {
+		      console.log('User signed out.');
+		      alert("You have sucessfully logged out.");
+		    });
+		};
+		</script>
+	</body>
+
+</html>
