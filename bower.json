@@ -1,0 +1,13 @@
+{
+  "name": "supergruper",
+  "version": "0.0.0",
+  "homepage": "https://github.com/supergruper/supergruper",
+  "authors": [
+    "Sanjeev Suresh <sanjeevsuresh95@gmail.com>"
+  ],
+  "description": "front-end dependencies for supergruper",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.5"
+  }
+}
