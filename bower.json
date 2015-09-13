@@ -8,6 +8,8 @@
   "description": "front-end dependencies for supergruper",
   "license": "MIT",
   "dependencies": {
-    "angular": "~1.4.5"
+    "angular": "~1.4.5",
+    "bootstrap": "~3.3.5",
+    "foundation": "~5.5.2"
   }
 }
